@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Course Registration Form</title>
+  </head>
+
+  <body>
+    <h1>Course Registration Form</h1>
+
+    <form>
+      <!-- PERSONAL DETAILS -->
+
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        First Name:
+        <input type="text" placeholder="Ex: Sreevidya" />
+        <br /><br />
+
+        Surname:
+        <input type="text" placeholder="Ex: T" />
+        <br /><br />
+
+        Mobile Number:
+        <input type="tel" placeholder="987-897-0987" />
+        <br /><br />
+
+        Email:
+        <input type="email" placeholder="rohit@gmail.com" />
+        <br /><br />
+
+        Password:
+        <input type="password" placeholder="minimum 5 characters" />
+        <br /><br />
+
+        Confirm Password:
+        <input type="password" placeholder="minimum 5 characters" />
+        <br /><br />
+
+        DOB:
+        <input type="date" />
+        <br /><br />
+
+        Gender:
+
+        <input type="radio" name="gender" /> Male
+
+        <input type="radio" name="gender" /> Female
+
+        <input type="radio" name="gender" /> Custom
+
+        <br /><br />
+
+        Select Country:
+
+        <select>
+          <option>-- Select --</option>
+          <option>India</option>
+          <option>USA</option>
+          <option>Canada</option>
+          <option>UK</option>
+        </select>
+
+        <br /><br />
+
+        Upload Picture:
+        <input type="file" />
+      </fieldset>
+
+      <br />
+
+      <!-- COURSE DETAILS -->
+
+      <fieldset>
+        <legend>Course Details</legend>
+
+        Select Course:
+
+        <select>
+          <option>-- Select Course --</option>
+          <option>Java</option>
+          <option>Python</option>
+          <option>Web Development</option>
+          <option>Data Science</option>
+        </select>
+
+        <br /><br />
+
+        Delivery Mode:
+
+        <input type="checkbox" /> ONLINE
+
+        <input type="checkbox" /> OFFLINE
+
+        <br /><br />
+
+        Comments:
+
+        <br />
+
+        <textarea
+          rows="5"
+          cols="50"
+          placeholder="Enter additional comments..."
+        ></textarea>
+      </fieldset>
+
+      <br />
+
+      <!-- ADDITIONAL INPUT TYPES -->
+
+      <fieldset>
+        <legend>Additional Input Types</legend>
+
+        Website URL:
+        <input type="url" placeholder="https://example.com" />
+
+        <br /><br />
+
+        Search:
+        <input type="search" placeholder="Search..." />
+
+        <br /><br />
+
+        Age:
+        <input type="number" min="1" max="100" />
+
+        <br /><br />
+
+        Experience Level:
+        <input type="range" min="0" max="10" />
+
+        <br /><br />
+
+        Preferred Time:
+        <input type="time" />
+
+        <br /><br />
+
+        Interview Date & Time:
+        <input type="datetime-local" />
+
+        <br /><br />
+
+        Preferred Start Month:
+        <input type="month" />
+
+        <br /><br />
+
+        Preferred Week:
+        <input type="week" />
+
+        <br /><br />
+
+        Favorite Color:
+        <input type="color" />
+
+        <br /><br />
+
+        Hidden Field
+        <input type="hidden" value="COURSE-REG-2026" />
+
+        <br /><br />
+
+        Primary Skill:
+
+        <input list="skills" />
+
+        <datalist id="skills">
+          <option>Java</option>
+          <option>Python</option>
+          <option>HTML</option>
+          <option>CSS</option>
+        </datalist>
+
+        <br /><br />
+
+        Specialization:
+
+        <select>
+          <optgroup label="Technology">
+            <option>Web Development</option>
+            <option>AI</option>
+          </optgroup>
+
+          <optgroup label="Design">
+            <option>UI/UX</option>
+            <option>Graphics</option>
+          </optgroup>
+        </select>
+
+        <br /><br />
+
+        Hobbies:
+
+        <select multiple>
+          <option>Reading</option>
+          <option>Coding</option>
+          <option>Gaming</option>
+          <option>Music</option>
+        </select>
+
+        <br /><br />
+
+        Documents:
+        <input type="file" multiple />
+      </fieldset>
+
+      <br />
+
+      <!-- ATTRIBUTES DEMO -->
+
+      <fieldset>
+        <legend>Important Attributes Demo</legend>
+
+        Readonly:
+        <input type="text" value="Cannot edit this" readonly />
+
+        <br /><br />
+
+        Disabled:
+        <input type="text" value="Disabled Field" disabled />
+
+        <br /><br />
+
+        Autofocus:
+        <input type="text" placeholder="Gets focus" autofocus />
+
+        <br /><br />
+
+        Pattern (letters only):
+
+        <input type="text" pattern="[A-Za-z]+" placeholder="Only A-Z" />
+      </fieldset>
+
+      <br />
+
+      <!-- OUTPUT ELEMENTS -->
+
+      <fieldset>
+        <legend>Output Elements</legend>
+
+        Output:
+        <output>Result appears here</output>
+
+        <br /><br />
+
+        Progress (70%):
+
+        <progress value="70" max="100"></progress>
+
+        <br /><br />
+
+        Meter (60%):
+
+        <meter value="60" min="0" max="100"></meter>
+      </fieldset>
+
+      <br />
+
+      <!-- BUTTON TYPES -->
+
+      <fieldset>
+        <legend>Button Types</legend>
+
+        <input type="submit" value="Submit Form" />
+
+        <input type="reset" value="Reset Form" />
+
+        <input type="button" value="Click Me" />
+
+        <input
+          type="image"
+          src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png"
+          width="50"
+        />
+
+        <button>Button Element</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
